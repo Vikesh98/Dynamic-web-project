@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Student Data Submission page</title>
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body id="bodystyle">
+<div class="wrapper">
+<h2>Student Data Submission</h2>
+<hr>
+
+<div id="error_message"></div>
+
+<form  onsubmit="return validation()" action="DataSubmit" method="post">			
+		
+	
+		<table class="tbl">
+		<tr>
+			<td>
+				<label id="lbl">Name:</label>
+			</td>
+			<td>
+				<input type="text" id="name" name="uname"><br>
+			</td>	
+		</tr>
+		<tr>
+				<td>
+					<label id="lbl">Gender:</label>
+				</td>
+				<td>
+					<input type="radio" value="Male" name="gender"  >
+					<label for="male">Male</label>
+					<input type="radio" value="Female" name="gender" >
+					<label for="female">Female</label><br>
+				</td>
+		</tr>
+		<tr>
+			<td>
+				<label id="lbl">Mobile:</label>
+			</td>
+			<td>
+				<input type="text" id="mobile" name="mobileno"><br>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label id="lbl">Email:</label>
+			</td>
+			<td>
+				<input type="text" id="email" name="mail"><br>
+			</td>
+		</tr>
+		<tr>
+			<td>	
+				<label id="lbl">Qualification:</label>
+			</td>
+			<td>	
+				<select name="qualification" required>
+				<option value="" disabled="disabled" selected></option>
+				<option>B.Tech</option>
+				<option>BE</option>
+				<option>Diploma(Lateral)</option>
+				</select>
+			</td>	
+		</tr>
+		<tr>
+			<td>
+				<label id="lbl">Branch:</label>
+			</td>
+			<td>	
+				<select name="branch" required> 
+					<option value="" disabled="disabled" selected></option>
+					<option>Computer Science</option>
+					<option>ECE</option>
+					<option>EEE</option>
+					<option>Civil</option>
+					<option> MECH</option>
+					<option>IT </option>
+				</select><br>
+			</td>	
+		</tr>
+		<tr>	
+			<td>
+				<label id="lbl">Year Of Pass:</label>
+			</td>	
+			<td>
+				<select name="year" required>
+					<option value="" disabled="disabled" selected></option>
+					<option>2018</option>
+					<option>2019</option>
+					<option>2020</option>
+				</select><br>
+			</td>	
+		</tr>	
+		<tr>	
+			<td>
+				<label id="lbl">Date Of Birth:</label>
+			</td>
+			<td>	
+				<input type="date"  name="dob" required><br>
+			</td>	
+		</tr>
+		<tr>	
+			<td>
+				<label id="lbl">College Name:</label>
+			</td>	
+			<td>
+				<input type="text"  name="college" required><br>
+			</td>
+		</tr>
+		</table>
+		
+				<button onclick="validation()" id="btn">Submit</button>
+				<br>
+				
+			<!--  	<button  type="submit" id="btn">Submit</button>			-->
+				
+			
+							
+</form>
+				
+			
+				
+	
+</div>
+<script type="text/javascript" src="script.js" defer></script>
+</body>
+</html>
